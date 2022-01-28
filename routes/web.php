@@ -26,3 +26,5 @@ Route::get('/questionnaires/{questionnaire}', 'QuestionnaireController@show');
 Route::get('questionnaires/{questionnaire}/question/create', 'QuestionController@create');
 Route::post('questionnaires/{questionnaire}/questions', 'QuestionController@store');
 Route::get('/surveys/{questionnaire}-{slug}', 'SurveyController@show');
+Route::get('test', fn() => 'WElcome');
+Route::get('welcome', fn() => 'hello');
